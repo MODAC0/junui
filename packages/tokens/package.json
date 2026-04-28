@@ -29,11 +29,14 @@
     "./dist/tokens.css"
   ],
   "scripts": {
-    "build": "echo 'TODO: tsup build' && mkdir -p dist && touch dist/.gitkeep",
-    "dev": "echo 'TODO: tsup --watch'",
+    "build": "tsup",
+    "dev": "tsup --watch",
     "lint": "eslint src",
     "typecheck": "tsc --noEmit",
     "clean": "rm -rf dist .turbo *.tsbuildinfo"
+  },
+  "devDependencies": {
+    "tsup": "^8.3.5"
   },
   "publishConfig": {
     "access": "public"

@@ -19,7 +19,6 @@
     "noUnusedParameters": false,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "incremental": true,
     "jsx": "preserve"
   },
   "exclude": ["node_modules", "dist", "build", ".next", ".turbo", "coverage"]

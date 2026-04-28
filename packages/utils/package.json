@@ -25,12 +25,19 @@
     "dist"
   ],
   "scripts": {
-    "build": "echo 'TODO: tsup build' && mkdir -p dist && touch dist/.gitkeep",
-    "dev": "echo 'TODO: tsup --watch'",
+    "build": "tsup",
+    "dev": "tsup --watch",
     "lint": "eslint src",
-    "test": "echo 'TODO: vitest'",
+    "test": "echo 'no tests yet'",
     "typecheck": "tsc --noEmit",
     "clean": "rm -rf dist .turbo *.tsbuildinfo"
+  },
+  "dependencies": {
+    "clsx": "^2.1.1",
+    "tailwind-merge": "^2.5.5"
+  },
+  "devDependencies": {
+    "tsup": "^8.3.5"
   },
   "publishConfig": {
     "access": "public"

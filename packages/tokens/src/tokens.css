@@ -1,0 +1,199 @@
+/**
+ * @junui/tokens — design tokens (CSS variables)
+ *
+ * 다크모드 전략: data-theme="dark" 속성 (수동 토글). prefers-color-scheme 자동 추종 X.
+ * 모든 토큰은 CSS 변수로 정의되어 Tailwind v4 의 @theme 블록과 양방향 매핑됨.
+ */
+
+:root {
+  /* ---------- Color — base ---------- */
+  --junui-color-white: #ffffff;
+  --junui-color-black: #000000;
+
+  /* ---------- Color — neutral (cool gray) ---------- */
+  --junui-color-neutral-50: #f8fafc;
+  --junui-color-neutral-100: #f1f5f9;
+  --junui-color-neutral-200: #e2e8f0;
+  --junui-color-neutral-300: #cbd5e1;
+  --junui-color-neutral-400: #94a3b8;
+  --junui-color-neutral-500: #64748b;
+  --junui-color-neutral-600: #475569;
+  --junui-color-neutral-700: #334155;
+  --junui-color-neutral-800: #1e293b;
+  --junui-color-neutral-900: #0f172a;
+  --junui-color-neutral-950: #020617;
+
+  /* ---------- Color — primary (blue, trust 톤) ---------- */
+  --junui-color-primary-50: #eff6ff;
+  --junui-color-primary-100: #dbeafe;
+  --junui-color-primary-200: #bfdbfe;
+  --junui-color-primary-300: #93c5fd;
+  --junui-color-primary-400: #60a5fa;
+  --junui-color-primary-500: #3b82f6;
+  --junui-color-primary-600: #2563eb;
+  --junui-color-primary-700: #1d4ed8;
+  --junui-color-primary-800: #1e40af;
+  --junui-color-primary-900: #1e3a8a;
+  --junui-color-primary-950: #172554;
+
+  /* ---------- Color — positive (emerald, 가격 ↓ 등) ---------- */
+  --junui-color-positive-50: #ecfdf5;
+  --junui-color-positive-500: #10b981;
+  --junui-color-positive-600: #059669;
+  --junui-color-positive-700: #047857;
+
+  /* ---------- Color — danger (rose) ---------- */
+  --junui-color-danger-50: #fff1f2;
+  --junui-color-danger-500: #f43f5e;
+  --junui-color-danger-600: #e11d48;
+  --junui-color-danger-700: #be123c;
+
+  /* ---------- Color — warning (amber) ---------- */
+  --junui-color-warning-50: #fffbeb;
+  --junui-color-warning-500: #f59e0b;
+  --junui-color-warning-600: #d97706;
+
+  /* ---------- Semantic — light theme ---------- */
+  --junui-bg: var(--junui-color-white);
+  --junui-bg-subtle: var(--junui-color-neutral-50);
+  --junui-bg-muted: var(--junui-color-neutral-100);
+  --junui-bg-inverse: var(--junui-color-neutral-900);
+
+  --junui-fg: var(--junui-color-neutral-900);
+  --junui-fg-muted: var(--junui-color-neutral-600);
+  --junui-fg-subtle: var(--junui-color-neutral-400);
+  --junui-fg-inverse: var(--junui-color-white);
+  --junui-fg-on-primary: var(--junui-color-white);
+
+  --junui-border: var(--junui-color-neutral-200);
+  --junui-border-strong: var(--junui-color-neutral-300);
+
+  --junui-accent: var(--junui-color-primary-600);
+  --junui-accent-hover: var(--junui-color-primary-700);
+  --junui-accent-subtle: var(--junui-color-primary-50);
+
+  --junui-positive: var(--junui-color-positive-600);
+  --junui-danger: var(--junui-color-danger-600);
+  --junui-warning: var(--junui-color-warning-600);
+
+  --junui-ring: var(--junui-color-primary-500);
+
+  /* ---------- Spacing (4px base) ---------- */
+  --junui-space-0: 0;
+  --junui-space-1: 0.25rem;
+  --junui-space-2: 0.5rem;
+  --junui-space-3: 0.75rem;
+  --junui-space-4: 1rem;
+  --junui-space-5: 1.25rem;
+  --junui-space-6: 1.5rem;
+  --junui-space-8: 2rem;
+  --junui-space-10: 2.5rem;
+  --junui-space-12: 3rem;
+  --junui-space-16: 4rem;
+  --junui-space-20: 5rem;
+  --junui-space-24: 6rem;
+
+  /* ---------- Radius ---------- */
+  --junui-radius-none: 0;
+  --junui-radius-sm: 0.25rem;
+  --junui-radius-md: 0.375rem;
+  --junui-radius-lg: 0.5rem;
+  --junui-radius-xl: 0.75rem;
+  --junui-radius-2xl: 1rem;
+  --junui-radius-full: 9999px;
+
+  /* ---------- Typography ---------- */
+  --junui-font-sans:
+    'Pretendard Variable', 'Pretendard', -apple-system, BlinkMacSystemFont,
+    system-ui, 'Apple SD Gothic Neo', sans-serif;
+  --junui-font-mono:
+    'JetBrains Mono', 'SF Mono', Menlo, Monaco, 'Courier New', monospace;
+
+  --junui-text-xs: 0.75rem;
+  --junui-text-sm: 0.875rem;
+  --junui-text-base: 1rem;
+  --junui-text-lg: 1.125rem;
+  --junui-text-xl: 1.25rem;
+  --junui-text-2xl: 1.5rem;
+  --junui-text-3xl: 1.875rem;
+  --junui-text-4xl: 2.25rem;
+  --junui-text-5xl: 3rem;
+
+  --junui-leading-tight: 1.25;
+  --junui-leading-normal: 1.5;
+  --junui-leading-relaxed: 1.625;
+
+  --junui-weight-normal: 400;
+  --junui-weight-medium: 500;
+  --junui-weight-semibold: 600;
+  --junui-weight-bold: 700;
+
+  /* ---------- Shadow ---------- */
+  --junui-shadow-xs: 0 1px 2px 0 rgb(0 0 0 / 0.04);
+  --junui-shadow-sm:
+    0 1px 3px 0 rgb(0 0 0 / 0.08), 0 1px 2px 0 rgb(0 0 0 / 0.04);
+  --junui-shadow-md:
+    0 4px 6px -1px rgb(0 0 0 / 0.08), 0 2px 4px -2px rgb(0 0 0 / 0.04);
+  --junui-shadow-lg:
+    0 10px 15px -3px rgb(0 0 0 / 0.08), 0 4px 6px -4px rgb(0 0 0 / 0.04);
+  --junui-shadow-xl:
+    0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.04);
+  --junui-shadow-2xl: 0 25px 50px -12px rgb(0 0 0 / 0.15);
+
+  /* ---------- Motion ---------- */
+  --junui-duration-fast: 100ms;
+  --junui-duration-base: 150ms;
+  --junui-duration-slow: 250ms;
+  --junui-duration-slower: 400ms;
+
+  --junui-ease-linear: linear;
+  --junui-ease-in: cubic-bezier(0.4, 0, 1, 1);
+  --junui-ease-out: cubic-bezier(0, 0, 0.2, 1);
+  --junui-ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* ---------- Z-index ---------- */
+  --junui-z-dropdown: 1000;
+  --junui-z-sticky: 1020;
+  --junui-z-overlay: 1030;
+  --junui-z-modal: 1040;
+  --junui-z-popover: 1050;
+  --junui-z-toast: 1060;
+  --junui-z-tooltip: 1070;
+}
+
+/* ---------- Dark theme ---------- */
+[data-theme='dark'] {
+  --junui-bg: var(--junui-color-neutral-950);
+  --junui-bg-subtle: var(--junui-color-neutral-900);
+  --junui-bg-muted: var(--junui-color-neutral-800);
+  --junui-bg-inverse: var(--junui-color-white);
+
+  --junui-fg: var(--junui-color-neutral-50);
+  --junui-fg-muted: var(--junui-color-neutral-400);
+  --junui-fg-subtle: var(--junui-color-neutral-500);
+  --junui-fg-inverse: var(--junui-color-neutral-900);
+  --junui-fg-on-primary: var(--junui-color-white);
+
+  --junui-border: var(--junui-color-neutral-800);
+  --junui-border-strong: var(--junui-color-neutral-700);
+
+  --junui-accent: var(--junui-color-primary-500);
+  --junui-accent-hover: var(--junui-color-primary-400);
+  --junui-accent-subtle: rgb(59 130 246 / 0.12);
+
+  --junui-positive: var(--junui-color-positive-500);
+  --junui-danger: var(--junui-color-danger-500);
+  --junui-warning: var(--junui-color-warning-500);
+
+  --junui-ring: var(--junui-color-primary-400);
+
+  --junui-shadow-xs: 0 1px 2px 0 rgb(0 0 0 / 0.4);
+  --junui-shadow-sm: 0 1px 3px 0 rgb(0 0 0 / 0.5), 0 1px 2px 0 rgb(0 0 0 / 0.4);
+  --junui-shadow-md:
+    0 4px 6px -1px rgb(0 0 0 / 0.5), 0 2px 4px -2px rgb(0 0 0 / 0.4);
+  --junui-shadow-lg:
+    0 10px 15px -3px rgb(0 0 0 / 0.5), 0 4px 6px -4px rgb(0 0 0 / 0.4);
+  --junui-shadow-xl:
+    0 20px 25px -5px rgb(0 0 0 / 0.6), 0 8px 10px -6px rgb(0 0 0 / 0.4);
+  --junui-shadow-2xl: 0 25px 50px -12px rgb(0 0 0 / 0.8);
+}

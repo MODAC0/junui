@@ -1,0 +1,19 @@
+@import 'tailwindcss';
+@import '@junui/tokens/tokens.css';
+
+@theme {
+  --color-junui-bg: var(--junui-bg);
+  --color-junui-fg: var(--junui-fg);
+}
+
+html,
+body,
+#storybook-root {
+  background: var(--junui-bg);
+  color: var(--junui-fg);
+  font-family: var(--junui-font-sans);
+}
+
+#storybook-root {
+  padding: var(--junui-space-6);
+}
