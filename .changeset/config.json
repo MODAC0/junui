@@ -9,11 +9,9 @@
   "updateInternalDependencies": "patch",
   "ignore": [
     "@junui/api-real-estate",
-    "@junui/blog-pipeline",
     "@junui/native",
     "@junui/docs",
     "@junui/web",
-    "@junui/mobile",
-    "@junui/blog"
+    "@junui/mobile"
   ]
 }

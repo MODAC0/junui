@@ -13,14 +13,14 @@ junui/
 │   ├── tokens/               # @junui/tokens      — design tokens
 │   ├── utils/                # @junui/utils       — shared utilities
 │   ├── api-real-estate/      # @junui/api-real-estate (private, Phase 3)
-│   ├── blog-pipeline/        # @junui/blog-pipeline   (private, Phase 5)
 │   └── native/               # @junui/native      — RN component subset (Phase 4)
 └── apps/
     ├── docs/                 # Storybook + docs site (Phase 1)
     ├── web/                  # Real-estate web service (Phase 2~3)
-    ├── mobile/               # iOS/Android RN app (Phase 4)
-    └── blog/                 # 요람일지 — daily dev blog (Phase 5)
+    └── mobile/               # iOS/Android RN app (Phase 4)
 ```
+
+요람일지 (https://yoramilji.kr/) 는 별도 운영 — `study-yoram-ilji` 에 그대로. 이 모노레포로 흡수하지 않는다.
 
 ## Requirements
 
