@@ -1,0 +1,13 @@
+{
+  "name": "@junui/web",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Real-estate web service (apartment, v1) — Phase 2~3.",
+  "scripts": {
+    "build": "echo 'TODO: phase-2'",
+    "dev": "echo 'TODO: phase-2'",
+    "lint": "echo 'TODO'",
+    "typecheck": "echo 'TODO'",
+    "clean": "rm -rf .next .turbo"
+  }
+}

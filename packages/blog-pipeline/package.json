@@ -1,0 +1,17 @@
+{
+  "name": "@junui/blog-pipeline",
+  "version": "0.0.0",
+  "description": "Daily Notion blog post automation (git activity → LLM → Notion DB → 요람일지) — Phase 5.",
+  "license": "MIT",
+  "author": "modac",
+  "private": true,
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "echo 'TODO: phase-5' && mkdir -p dist && touch dist/.gitkeep",
+    "lint": "eslint src",
+    "typecheck": "tsc --noEmit",
+    "clean": "rm -rf dist .turbo *.tsbuildinfo"
+  }
+}

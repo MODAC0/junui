@@ -1,0 +1,17 @@
+{
+  "name": "@junui/native",
+  "version": "0.0.0",
+  "description": "junui — React Native compatible component subset for mobile (mirrors @junui/ui surface) — Phase 4.",
+  "license": "MIT",
+  "author": "modac",
+  "private": true,
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "echo 'TODO: phase-4' && mkdir -p dist && touch dist/.gitkeep",
+    "lint": "eslint src",
+    "typecheck": "tsc --noEmit",
+    "clean": "rm -rf dist .turbo *.tsbuildinfo"
+  }
+}

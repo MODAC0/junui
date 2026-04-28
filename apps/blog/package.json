@@ -1,0 +1,13 @@
+{
+  "name": "@junui/blog",
+  "version": "0.0.0",
+  "private": true,
+  "description": "요람일지 — daily dev blog frontend (Notion-backed) — Phase 5. Replaces top-level study-yoram-ilji.",
+  "scripts": {
+    "build": "echo 'TODO: phase-5 (study-yoram-ilji 이전)'",
+    "dev": "echo 'TODO: phase-5'",
+    "lint": "echo 'TODO'",
+    "typecheck": "echo 'TODO'",
+    "clean": "rm -rf .next .turbo"
+  }
+}

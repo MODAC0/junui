@@ -1,0 +1,50 @@
+{
+  "name": "@junui/ui",
+  "version": "0.0.0",
+  "description": "junui — React/Next.js component library. Curated 25~30 components on Radix Primitives + Tailwind.",
+  "license": "MIT",
+  "author": "modac",
+  "homepage": "https://github.com/MODAC0/junui/tree/main/packages/ui",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MODAC0/junui.git",
+    "directory": "packages/ui"
+  },
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./styles.css": "./dist/styles.css"
+  },
+  "files": [
+    "dist"
+  ],
+  "sideEffects": [
+    "./dist/styles.css",
+    "**/*.css"
+  ],
+  "scripts": {
+    "build": "echo 'TODO: tsup build (M1.1)' && mkdir -p dist && touch dist/.gitkeep",
+    "dev": "echo 'TODO: tsup --watch (M1.1)'",
+    "lint": "eslint src",
+    "test": "echo 'TODO: vitest (M1.1)'",
+    "typecheck": "tsc --noEmit",
+    "clean": "rm -rf dist .turbo *.tsbuildinfo"
+  },
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18"
+  },
+  "dependencies": {
+    "@junui/tokens": "workspace:*"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

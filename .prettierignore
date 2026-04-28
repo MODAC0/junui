@@ -1,0 +1,11 @@
+node_modules
+dist
+build
+.next
+.turbo
+storybook-static
+coverage
+pnpm-lock.yaml
+*.tsbuildinfo
+.changeset/*.md
+CHANGELOG.md
